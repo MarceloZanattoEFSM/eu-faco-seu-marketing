@@ -30,7 +30,7 @@ const Index = () => {
   <div className="absolute inset-0 z-0 overflow-hidden">
     <div className="absolute inset-0 bg-dark bg-opacity-95 z-10"></div>
     <img
-      src="/lovable-uploads/wallpaper.jpg"
+      src="/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png"
       alt="Background"
       className="w-full h-full object-cover object-top z-0"
     />
