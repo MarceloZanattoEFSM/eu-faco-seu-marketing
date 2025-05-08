@@ -44,7 +44,6 @@ const Index = () => {
           <span className="text-white">Seu negócio na direção certa! </span>
           <span className="text-primary">Estratégia.</span>
           <span className="text-secondary mx-2">Execução.</span>
-          <br className="block lg:hidden" />
           <span className="text-white">Resultado.</span>
         </h1>
         <p className="text-xl mb-8 text-gray-300 max-w-xl">
