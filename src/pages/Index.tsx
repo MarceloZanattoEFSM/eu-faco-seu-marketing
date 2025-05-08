@@ -34,8 +34,7 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 mb-10 lg:mb-0">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                <span className="text-white">Seu negócio no </span>
-                <span className="text-primary">alvo certo.</span>
+                <span className="text-white">Seu negócio na direção certa!</span>
                 <div className="mt-2">
                   <span className="text-primary">Estratégia.</span>
                   <span className="text-secondary mx-2">Execução.</span>
