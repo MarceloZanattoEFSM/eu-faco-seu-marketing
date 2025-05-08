@@ -40,27 +40,21 @@ const Index = () => {
   <div className="container mx-auto py-20 relative z-20 px-[50px]">
     <div className="flex flex-col lg:flex-row items-center">
       <div className="w-full mb-10 lg:mb-0 max-w-4xl">
-       <h1 style={{
-  fontWeight: 'bold',
-  lineHeight: '1.2',
-  marginBottom: '1.5rem',
-  fontSize: typeof window !== 'undefined' && window.innerWidth > 1024 ? '4rem' : '2.2rem'
-}}>
+      <h1
+  style={{
+    fontWeight: 'bold',
+    lineHeight: '1.2',
+    marginBottom: '1.5rem',
+    fontSize: 'clamp(2rem, 5vw, 4.5rem)'
+  }}
+>
   <span style={{ display: 'block', color: '#ffffff' }}>
     Seu negócio na direção certa!
   </span>
-  <span style={{
-    display: 'inline-block',
-    color: '#8B5CF6',
-    marginRight: '0.3rem'
-  }}>
+  <span style={{ display: 'inline-block', color: '#8B5CF6', marginRight: '0.3rem' }}>
     Estratégia.
   </span>
-  <span style={{
-    display: 'inline-block',
-    color: '#A3BE55',
-    marginRight: '0.3rem'
-  }}>
+  <span style={{ display: 'inline-block', color: '#A3BE55', marginRight: '0.3rem' }}>
     Execução.
   </span>
   <span style={{ display: 'inline-block', color: '#ffffff' }}>
