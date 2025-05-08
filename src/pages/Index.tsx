@@ -28,7 +28,7 @@ const Index = () => {
       <section className="min-h-screen flex items-center pt-20 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-dark bg-opacity-80"></div>
-          <img src="/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Background" className="w-full h-full opacity-5 object-cover object-[top_80%]" />      </div>
+          <img src="/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Background" className="w-full h-full opacity-5 object-cover object-[top_10%]" />      </div>
         <div className="container mx-auto py-20 relative z-10 px-[50px]">
           <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full mb-10 lg:mb-0 max-w-4xl">
