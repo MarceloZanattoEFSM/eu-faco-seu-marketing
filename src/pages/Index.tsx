@@ -29,12 +29,8 @@ const Index = () => {
   {/* Fundo com imagem escura + posicionamento correto */}
   <div className="absolute inset-0 z-0 overflow-hidden">
   <div className="absolute inset-0 bg-dark bg-opacity-60 z-10"></div>
-  <img
-    src="/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png"
-    alt="Background"
-    className="absolute inset-0 w-full h-full object-cover opacity-40 z-0"
-  />
-</div>
+  <img src="/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Background" className="absolute inset-0 w-full h-full object-cover opacity-40 z-0" />
+      </div>
 
   {/* Conteúdo da Hero */}
   <div className="container mx-auto py-20 relative z-20 px-[50px]">
@@ -49,12 +45,7 @@ const Index = () => {
         <p className="text-xl mb-8 text-gray-300 max-w-xl">
           Somos a assessoria estratégica em marketing e vendas que já ajudou mais de 200 empresas no Brasil e no exterior.
         </p>
-        <a
-          href="https://wa.me/5511999907739?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria%20gratuita."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary text-lg w-full sm:w-auto inline-block"
-        >
+        <a href="https://wa.me/5511999907739?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria%20gratuita." target="_blank" rel="noopener noreferrer" className="btn-primary text-lg w-full sm:w-auto inline-block">
           Quero uma Consultoria Gratuita
         </a>
       </div>
@@ -68,7 +59,7 @@ const Index = () => {
       </div>
     </div>
   </div>
-</section>
+    </section>
 
       {/* Sobre Nós - with smaller image */}
       <section id="sobre" className="section-padding bg-dark-light">
@@ -83,7 +74,7 @@ const Index = () => {
               <div className="relative max-w-md mx-auto">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-                  <img src="/lovable-uploads/40c43d07-6b95-46e3-b7bf-30e8430ccd8b.png" alt="Equipe de especialistas" className="w-full h-auto" />
+                  <img alt="Equipe de especialistas" src="/lovable-uploads/aaab378c-2a6e-4471-81ce-9a9e381f5d9a.jpg" className="w-full h-auto object-fill" />
                 </div>
               </div>
             </div>
