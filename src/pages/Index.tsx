@@ -42,8 +42,8 @@ const Index = () => {
       <div className="w-full mb-10 lg:mb-0 max-w-4xl">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] font-bold leading-snug mb-6">
           <span className="text-white">Seu negócio na direção certa! </span>
-          <span className="text-primary">Estratégia. </span>
-          <span className="text-secondary mx-2">Execução. </span>
+          <span className="text-primary">Estratégia.</span>
+          <span className="text-secondary mx-2">Execução.</span>
           <span className="text-white">Resultado.</span>
         </h1>
         <p className="text-xl mb-8 text-gray-300 max-w-xl">
