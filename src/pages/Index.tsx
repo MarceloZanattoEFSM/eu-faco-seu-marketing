@@ -1,19 +1,11 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import WhatsAppButton from '../components/WhatsAppButton';
 import ServiceCard from '../components/ServiceCard';
 import TestimonialCard from '../components/TestimonialCard';
-import { 
-  TrendingUp, Users, MessageSquare, LayoutDashboard, 
-  FileText, FileCode, ShoppingCart, Globe, Instagram,
-  Linkedin, Award, Briefcase, BarChart, ChartLine, 
-  ChartPie, Smartphone, Star, Pen, TrafficCone
-} from 'lucide-react';
-
+import { TrendingUp, Users, MessageSquare, LayoutDashboard, FileText, FileCode, ShoppingCart, Globe, Instagram, Linkedin, Award, Briefcase, BarChart, ChartLine, ChartPie, Smartphone, Star, Pen, TrafficCone } from 'lucide-react';
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-dark text-white">
+  return <div className="min-h-screen bg-dark text-white">
       <Navbar />
       <WhatsAppButton />
 
@@ -34,12 +26,7 @@ const Index = () => {
               <p className="text-xl mb-8 text-gray-300 max-w-xl">
                 Somos a assessoria estratégica em marketing e vendas que já ajudou mais de 200 empresas no Brasil e no exterior.
               </p>
-              <a 
-                href="https://wa.me/5511999907739?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria%20gratuita."
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn-primary text-lg w-full sm:w-auto inline-block"
-              >
+              <a href="https://wa.me/5511999907739?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria%20gratuita." target="_blank" rel="noopener noreferrer" className="btn-primary text-lg w-full sm:w-auto inline-block">
                 Quero uma Consultoria Gratuita
               </a>
             </div>
@@ -47,11 +34,7 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-                  <img 
-                    src="/public/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" 
-                    alt="Especialistas em marketing" 
-                    className="w-full h-auto"
-                  />
+                  <img src="/public/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Especialistas em marketing" className="w-full h-auto" />
                 </div>
               </div>
             </div>
@@ -72,11 +55,7 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-                  <img 
-                    src="/public/lovable-uploads/40c43d07-6b95-46e3-b7bf-30e8430ccd8b.png" 
-                    alt="Equipe de especialistas" 
-                    className="w-full h-auto"
-                  />
+                  <img src="/public/lovable-uploads/40c43d07-6b95-46e3-b7bf-30e8430ccd8b.png" alt="Equipe de especialistas" className="w-full h-150" />
                 </div>
               </div>
             </div>
@@ -154,46 +133,14 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <ServiceCard 
-              icon={TrendingUp} 
-              title="Tráfego Pago" 
-              description="Campanhas estratégicas no Google, Meta, TikTok e LinkedIn Ads para maximizar seu ROI."
-            />
-            <ServiceCard 
-              icon={MessageSquare} 
-              title="Gestão de Redes Sociais" 
-              description="Criação de conteúdo, interação com seguidores e estratégias para aumentar engajamento."
-            />
-            <ServiceCard 
-              icon={LayoutDashboard} 
-              title="Landing Pages" 
-              description="Desenvolvimento de páginas de conversão otimizadas para seus objetivos de negócio."
-            />
-            <ServiceCard 
-              icon={ShoppingCart} 
-              title="Criação de eCommerce" 
-              description="Lojas virtuais profissionais com parceria Tray e NuvemShop."
-            />
-            <ServiceCard 
-              icon={Pen} 
-              title="Branding" 
-              description="Desenvolvimento de logotipo e identidade visual completa para sua marca."
-            />
-            <ServiceCard 
-              icon={Users} 
-              title="Treinamentos e Consultorias" 
-              description="Capacitação para equipes de vendas e marketing com foco em resultados."
-            />
-            <ServiceCard 
-              icon={Smartphone} 
-              title="CRM com WhatsApp + IA" 
-              description="Sistema próprio para gestão de relacionamento com clientes integrado ao WhatsApp."
-            />
-            <ServiceCard 
-              icon={ChartPie} 
-              title="Automações e Funis" 
-              description="Processos comerciais automatizados para aumentar conversões e vendas."
-            />
+            <ServiceCard icon={TrendingUp} title="Tráfego Pago" description="Campanhas estratégicas no Google, Meta, TikTok e LinkedIn Ads para maximizar seu ROI." />
+            <ServiceCard icon={MessageSquare} title="Gestão de Redes Sociais" description="Criação de conteúdo, interação com seguidores e estratégias para aumentar engajamento." />
+            <ServiceCard icon={LayoutDashboard} title="Landing Pages" description="Desenvolvimento de páginas de conversão otimizadas para seus objetivos de negócio." />
+            <ServiceCard icon={ShoppingCart} title="Criação de eCommerce" description="Lojas virtuais profissionais com parceria Tray e NuvemShop." />
+            <ServiceCard icon={Pen} title="Branding" description="Desenvolvimento de logotipo e identidade visual completa para sua marca." />
+            <ServiceCard icon={Users} title="Treinamentos e Consultorias" description="Capacitação para equipes de vendas e marketing com foco em resultados." />
+            <ServiceCard icon={Smartphone} title="CRM com WhatsApp + IA" description="Sistema próprio para gestão de relacionamento com clientes integrado ao WhatsApp." />
+            <ServiceCard icon={ChartPie} title="Automações e Funis" description="Processos comerciais automatizados para aumentar conversões e vendas." />
           </div>
         </div>
       </section>
@@ -257,26 +204,11 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <TestimonialCard 
-              name="Viviane Cardoso" 
-              testimonial="Transformaram nosso marketing digital! Estamos crescendo mês a mês com estratégias assertivas e suporte contínuo." 
-            />
-            <TestimonialCard 
-              name="Guilherme Almeida" 
-              testimonial="Equipe dedicada e soluções eficazes. Fizeram a diferença para nosso negócio com abordagens inovadoras!" 
-            />
-            <TestimonialCard 
-              name="Leonardo Ribeiro" 
-              testimonial="Agência incrível, sempre atentos aos detalhes e com resultados visíveis! O investimento mais bem aplicado da minha empresa." 
-            />
-            <TestimonialCard 
-              name="Gustavo Lima" 
-              testimonial="Suporte impecável e estratégias que realmente funcionam! O time todo está sempre disponível para ajudar." 
-            />
-            <TestimonialCard 
-              name="Fernando Lima" 
-              testimonial="Soluções certeiras e estratégias eficazes. O melhor investimento que fizemos para nosso crescimento no digital!" 
-            />
+            <TestimonialCard name="Viviane Cardoso" testimonial="Transformaram nosso marketing digital! Estamos crescendo mês a mês com estratégias assertivas e suporte contínuo." />
+            <TestimonialCard name="Guilherme Almeida" testimonial="Equipe dedicada e soluções eficazes. Fizeram a diferença para nosso negócio com abordagens inovadoras!" />
+            <TestimonialCard name="Leonardo Ribeiro" testimonial="Agência incrível, sempre atentos aos detalhes e com resultados visíveis! O investimento mais bem aplicado da minha empresa." />
+            <TestimonialCard name="Gustavo Lima" testimonial="Suporte impecável e estratégias que realmente funcionam! O time todo está sempre disponível para ajudar." />
+            <TestimonialCard name="Fernando Lima" testimonial="Soluções certeiras e estratégias eficazes. O melhor investimento que fizemos para nosso crescimento no digital!" />
             <div className="flex items-center justify-center bg-dark-light rounded-lg p-6 border border-gray-800">
               <div className="text-center">
                 <div className="mb-4 text-5xl font-bold text-secondary">+200</div>
@@ -441,12 +373,7 @@ const Index = () => {
             <p className="text-xl mb-8 text-gray-300">
               Solicite agora sua consultoria gratuita com quem entende de verdade de marketing e vendas.
             </p>
-            <a 
-              href="https://wa.me/5511999907739?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria%20gratuita."
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn-primary text-lg px-8 py-4 animate-pulse-slow"
-            >
+            <a href="https://wa.me/5511999907739?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria%20gratuita." target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 animate-pulse-slow">
               Quero minha consultoria gratuita
             </a>
           </div>
@@ -459,11 +386,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
             <div>
               <div className="flex items-center mb-6">
-                <img
-                  src="/public/lovable-uploads/ae37cbee-2306-4d0f-881d-12198ce3a9cc.png"
-                  alt="Eu Faço Seu Marketing"
-                  className="h-10 mr-3"
-                />
+                <img src="/public/lovable-uploads/ae37cbee-2306-4d0f-881d-12198ce3a9cc.png" alt="Eu Faço Seu Marketing" className="h-10 mr-3" />
                 <span className="text-xl font-kumbh font-bold text-primary">
                   eu faço seu marketing
                 </span>
@@ -472,20 +395,10 @@ const Index = () => {
                 Assessoria estratégica em marketing e vendas, transformando negócios através de estratégias personalizadas e resultados mensuráveis.
               </p>
               <div className="flex space-x-4">
-                <a 
-                  href="https://www.instagram.com/eufacoseu.marketing/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-dark p-2 rounded-full hover:bg-primary transition-colors"
-                >
+                <a href="https://www.instagram.com/eufacoseu.marketing/" target="_blank" rel="noopener noreferrer" className="bg-dark p-2 rounded-full hover:bg-primary transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a 
-                  href="https://www.linkedin.com/company/eu-faco-seu-marketing/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-dark p-2 rounded-full hover:bg-primary transition-colors"
-                >
+                <a href="https://www.linkedin.com/company/eu-faco-seu-marketing/" target="_blank" rel="noopener noreferrer" className="bg-dark p-2 rounded-full hover:bg-primary transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
               </div>
@@ -537,16 +450,9 @@ const Index = () => {
                 Av. Senador Vergueiro, 2123, cj 1910 - Rudge Ramos, São Bernardo do Campo - SP, 09750-001
               </p>
               <div className="h-48 rounded-lg overflow-hidden">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.4193608953455!2d-46.5843872!3d-23.6609321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43bac65fdf39%3A0x8831c262ed126008!2sAv.%20Senador%20Vergueiro%2C%202123%20-%20Planalto%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009750-001!5e0!3m2!1spt-BR!2sbr!4v1651214382056!5m2!1spt-BR!2sbr" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Localização Eu Faço Seu Marketing"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.4193608953455!2d-46.5843872!3d-23.6609321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43bac65fdf39%3A0x8831c262ed126008!2sAv.%20Senador%20Vergueiro%2C%202123%20-%20Planalto%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009750-001!5e0!3m2!1spt-BR!2sbr!4v1651214382056!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{
+                border: 0
+              }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização Eu Faço Seu Marketing"></iframe>
               </div>
             </div>
           </div>
@@ -558,8 +464,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
