@@ -1,17 +1,48 @@
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import WhatsAppButton from '../components/WhatsAppButton';
 import ServiceCard from '../components/ServiceCard';
 import TestimonialCard from '../components/TestimonialCard';
+import FAQAccordion from '../components/FAQAccordion';
 import { TrendingUp, Users, MessageSquare, LayoutDashboard, FileText, FileCode, ShoppingCart, Globe, Instagram, Linkedin, Award, Briefcase, BarChart, ChartLine, ChartPie, Smartphone, Star, Pen, TrafficCone } from 'lucide-react';
+
 const Index = () => {
+  // FAQ data
+  const faqItems = [
+    {
+      question: "Qual o preço?",
+      answer: "Cada projeto é único e personalizado conforme suas necessidades específicas. O mais caro é perder clientes por falta de estratégia adequada. Entre em contato para uma avaliação personalizada."
+    },
+    {
+      question: "Quando terei resultado?",
+      answer: "Vai depender do nosso trabalho conjunto. Garantimos método, execução e acompanhamento constante para maximizar os resultados no menor tempo possível, mas com foco em resultados sustentáveis."
+    },
+    {
+      question: "Qual o prazo mínimo de contrato?",
+      answer: "6 meses é o tempo ideal para consolidar resultados consistentes. Estratégias de marketing eficientes exigem planejamento, implementação e otimização contínua para atingir seu potencial máximo."
+    },
+    {
+      question: "Atendem minha região?",
+      answer: "Atuamos em todo Brasil, Portugal e EUA. Nossa metodologia funciona independente da localização, com atendimento remoto eficiente e personalizado para cada cliente."
+    }
+  ];
+
   return <div className="min-h-screen bg-dark text-white">
       <Navbar />
       <WhatsAppButton />
 
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center pt-20 gradient-bg">
-        <div className="container mx-auto px-4 py-20">
+      {/* Hero Section with Background Image */}
+      <section className="min-h-screen flex items-center pt-20 relative">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-dark bg-opacity-80"></div>
+          <img 
+            src="/public/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" 
+            alt="Background" 
+            className="w-full h-full object-cover opacity-25"
+          />
+        </div>
+        <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 mb-10 lg:mb-0">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -42,7 +73,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Sobre Nós */}
+      {/* Sobre Nós - with smaller image */}
       <section id="sobre" className="section-padding bg-dark-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -52,10 +83,10 @@ const Index = () => {
 
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2">
-              <div className="relative">
+              <div className="relative max-w-md mx-auto">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-                  <img src="/public/lovable-uploads/40c43d07-6b95-46e3-b7bf-30e8430ccd8b.png" alt="Equipe de especialistas" className="w-full h-150" />
+                  <img src="/public/lovable-uploads/40c43d07-6b95-46e3-b7bf-30e8430ccd8b.png" alt="Equipe de especialistas" className="w-full h-auto" />
                 </div>
               </div>
             </div>
@@ -318,7 +349,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* FAQ - Using accordion */}
       <section className="section-padding bg-dark">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -329,37 +360,7 @@ const Index = () => {
             <div className="h-1 w-20 bg-secondary mx-auto mt-4"></div>
           </div>
 
-          <div className="max-w-3xl mx-auto">
-            <div className="space-y-6">
-              <div className="bg-dark-light rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-3">Qual o preço?</h3>
-                <p className="text-gray-300">
-                  Cada projeto é único e personalizado conforme suas necessidades específicas. O mais caro é perder clientes por falta de estratégia adequada. Entre em contato para uma avaliação personalizada.
-                </p>
-              </div>
-
-              <div className="bg-dark-light rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-3">Quando terei resultado?</h3>
-                <p className="text-gray-300">
-                  Vai depender do nosso trabalho conjunto. Garantimos método, execução e acompanhamento constante para maximizar os resultados no menor tempo possível, mas com foco em resultados sustentáveis.
-                </p>
-              </div>
-
-              <div className="bg-dark-light rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-3">Qual o prazo mínimo de contrato?</h3>
-                <p className="text-gray-300">
-                  6 meses é o tempo ideal para consolidar resultados consistentes. Estratégias de marketing eficientes exigem planejamento, implementação e otimização contínua para atingir seu potencial máximo.
-                </p>
-              </div>
-
-              <div className="bg-dark-light rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-3">Atendem minha região?</h3>
-                <p className="text-gray-300">
-                  Atuamos em todo Brasil, Portugal e EUA. Nossa metodologia funciona independente da localização, com atendimento remoto eficiente e personalizado para cada cliente.
-                </p>
-              </div>
-            </div>
-          </div>
+          <FAQAccordion items={faqItems} />
         </div>
       </section>
 
@@ -380,16 +381,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer - With improved layout */}
       <footer className="bg-dark-light pt-16 pb-6">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
             <div>
               <div className="flex items-center mb-6">
-                <img src="/public/lovable-uploads/ae37cbee-2306-4d0f-881d-12198ce3a9cc.png" alt="Eu Faço Seu Marketing" className="h-10 mr-3" />
-                <span className="text-xl font-kumbh font-bold text-primary">
-                  eu faço seu marketing
-                </span>
+                <img src="/public/lovable-uploads/ae37cbee-2306-4d0f-881d-12198ce3a9cc.png" alt="Eu Faço Seu Marketing" className="h-10" />
               </div>
               <p className="text-gray-400 mb-6">
                 Assessoria estratégica em marketing e vendas, transformando negócios através de estratégias personalizadas e resultados mensuráveis.
@@ -446,14 +444,14 @@ const Index = () => {
 
             <div>
               <h3 className="text-xl font-bold mb-6">Localização</h3>
-              <p className="text-gray-400 mb-4">
-                Av. Senador Vergueiro, 2123, cj 1910 - Rudge Ramos, São Bernardo do Campo - SP, 09750-001
-              </p>
               <div className="h-48 rounded-lg overflow-hidden">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.4193608953455!2d-46.5843872!3d-23.6609321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43bac65fdf39%3A0x8831c262ed126008!2sAv.%20Senador%20Vergueiro%2C%202123%20-%20Planalto%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009750-001!5e0!3m2!1spt-BR!2sbr!4v1651214382056!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{
                 border: 0
               }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização Eu Faço Seu Marketing"></iframe>
               </div>
+              <p className="text-gray-500 text-xs mt-2">
+                Av. Senador Vergueiro, 2123, cj 1910 - Rudge Ramos, São Bernardo do Campo - SP, 09750-001
+              </p>
             </div>
           </div>
 
@@ -466,4 +464,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;

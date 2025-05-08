@@ -29,11 +29,8 @@ const Navbar = () => {
           <img
             src="/public/lovable-uploads/ae37cbee-2306-4d0f-881d-12198ce3a9cc.png"
             alt="Eu Faço Seu Marketing"
-            className="h-8 mr-3"
+            className="h-10"
           />
-          <span className="text-lg md:text-xl font-kumbh font-bold text-primary">
-            eu faço seu <span className="block md:inline">marketing</span>
-          </span>
         </div>
 
         {/* Desktop Navigation */}
