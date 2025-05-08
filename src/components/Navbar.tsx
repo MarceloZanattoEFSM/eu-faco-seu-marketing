@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <img
-            src="/public/lovable-uploads/ae37cbee-2306-4d0f-881d-12198ce3a9cc.png"
+            src="/lovable-uploads/ae37cbee-2306-4d0f-881d-12198ce3a9cc.png"
             alt="Eu Faço Seu Marketing"
             className="h-10"
           />
