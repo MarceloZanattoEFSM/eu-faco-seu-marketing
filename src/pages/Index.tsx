@@ -31,7 +31,7 @@ const Index = () => {
           <img
   src="/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png"
   alt="Background"
-  className="w-full h-full opacity-5 object-cover object-[top_14%]"
+  className="absolute top-0 left-0 w-full min-h-screen opacity-5 object-cover object-[top_18%]"
 />
                 </div>
         <div className="container mx-auto py-20 relative z-10 px-[50px]">
