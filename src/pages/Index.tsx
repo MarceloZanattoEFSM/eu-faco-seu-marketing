@@ -40,13 +40,32 @@ const Index = () => {
   <div className="container mx-auto py-20 relative z-20 px-[50px]">
     <div className="flex flex-col lg:flex-row items-center">
       <div className="w-full mb-10 lg:mb-0 max-w-4xl">
-       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] font-bold leading-tight mb-6">
-  <span className="text-white block">Seu negócio na direção certa!</span>
-  <div className="flex flex-wrap gap-x-2 gap-y-1 mt-1">
-    <span className="text-primary">Estratégia.</span>
-    <span className="text-secondary">Execução.</span>
-    <span className="text-white">Resultado.</span>
-  </div>
+       <h1 style={{
+  fontSize: '2rem',
+  fontWeight: 'bold',
+  lineHeight: '1.2',
+  marginBottom: '1.5rem'
+}}>
+  <span style={{ display: 'block', color: '#ffffff' }}>
+    Seu negócio na direção certa!
+  </span>
+  <span style={{
+    display: 'inline-block',
+    color: '#8B5CF6',
+    marginRight: '0.3rem'
+  }}>
+    Estratégia.
+  </span>
+  <span style={{
+    display: 'inline-block',
+    color: '#A3BE55',
+    marginRight: '0.3rem'
+  }}>
+    Execução.
+  </span>
+  <span style={{ display: 'inline-block', color: '#ffffff' }}>
+    Resultado.
+  </span>
 </h1>
         <p className="text-xl mb-8 text-gray-300 max-w-xl">
           Somos a assessoria estratégica em marketing e vendas que já ajudou mais de 200 empresas no Brasil e no exterior.
