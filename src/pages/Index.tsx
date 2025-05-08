@@ -40,11 +40,13 @@ const Index = () => {
   <div className="container mx-auto py-20 relative z-20 px-[50px]">
     <div className="flex flex-col lg:flex-row items-center">
       <div className="w-full mb-10 lg:mb-0 max-w-4xl">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] font-bold leading-snug mb-6 break-words">
-  <span className="text-white block">Seu negócio na direção certa!</span>
-  <span className="text-primary"> Estratégia.</span>
-  <span className="text-secondary mx-1">Execução.</span>
-  <span className="text-white">Resultado.</span>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] font-bold leading-snug mb-6">
+  <span className="block text-white">Seu negócio na direção certa!</span>
+  <span className="block">
+    <span className="text-primary">Estratégia.</span>{' '}
+    <span className="text-secondary">Execução.</span>{' '}
+    <span className="text-white">Resultado.</span>
+  </span>
 </h1>
         <p className="text-xl mb-8 text-gray-300 max-w-xl">
           Somos a assessoria estratégica em marketing e vendas que já ajudou mais de 200 empresas no Brasil e no exterior.
