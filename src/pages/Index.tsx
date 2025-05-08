@@ -25,7 +25,6 @@ const Index = () => {
       <WhatsAppButton />
 
       {/* Hero Section with Background Image */}
-<<<<<<< HEAD
       <section className="relative z-0 min-h-screen flex items-center pt-20 overflow-hidden">
   {/* Fundo com imagem escura + posicionamento correto */}
   <div className="absolute inset-0 z-0 overflow-hidden">
@@ -64,37 +63,6 @@ const Index = () => {
           <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30"></div>
           <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
             {/* Placeholder de imagem ou componente adicional */}
-=======
-      <section className="min-h-screen flex items-center pt-20 relative">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-dark bg-opacity-80"></div>
-          <img src="/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Background" className="absolute top-0 left-0 w-full min-h-screen opacity-5 object-cover object-[top_5%]" />
-                </div>
-        <div className="container mx-auto py-20 relative z-10 px-[50px]">
-          <div className="flex flex-col lg:flex-row items-center">
-          <div className="w-full mb-10 lg:mb-0 max-w-4xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] font-bold leading-snug mb-6">
-  <span className="text-white">Seu negócio na direção certa! </span>
-  <span className="text-primary">Estratégia.</span>
-  <span className="text-secondary mx-2">Execução.</span>
-  <span className="text-white">Resultado.</span>
-            </h1>
-              <p className="text-xl mb-8 text-gray-300 max-w-xl">
-                Somos a assessoria estratégica em marketing e vendas que já ajudou mais de 200 empresas no Brasil e no exterior.
-              </p>
-              <a href="https://wa.me/5511999907739?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria%20gratuita." target="_blank" rel="noopener noreferrer" className="btn-primary text-lg w-full sm:w-auto inline-block">
-                Quero uma Consultoria Gratuita
-              </a>
-            </div>
-            <div className="lg:w-1/2 flex justify-center">
-              <div className="relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30"></div>
-                <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-                  
-                </div>
-              </div>
-            </div>
->>>>>>> da0b90d90734dd465b3acfb19a1cc18901f10628
           </div>
         </div>
       </div>
