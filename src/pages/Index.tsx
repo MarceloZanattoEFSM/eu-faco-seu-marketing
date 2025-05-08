@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import WhatsAppButton from '../components/WhatsAppButton';
@@ -6,28 +5,21 @@ import ServiceCard from '../components/ServiceCard';
 import TestimonialCard from '../components/TestimonialCard';
 import FAQAccordion from '../components/FAQAccordion';
 import { TrendingUp, Users, MessageSquare, LayoutDashboard, FileText, FileCode, ShoppingCart, Globe, Instagram, Linkedin, Award, Briefcase, BarChart, ChartLine, ChartPie, Smartphone, Star, Pen, TrafficCone } from 'lucide-react';
-
 const Index = () => {
   // FAQ data
-  const faqItems = [
-    {
-      question: "Qual o preço?",
-      answer: "Cada projeto é único e personalizado conforme suas necessidades específicas. O mais caro é perder clientes por falta de estratégia adequada. Entre em contato para uma avaliação personalizada."
-    },
-    {
-      question: "Quando terei resultado?",
-      answer: "Vai depender do nosso trabalho conjunto. Garantimos método, execução e acompanhamento constante para maximizar os resultados no menor tempo possível, mas com foco em resultados sustentáveis."
-    },
-    {
-      question: "Qual o prazo mínimo de contrato?",
-      answer: "6 meses é o tempo ideal para consolidar resultados consistentes. Estratégias de marketing eficientes exigem planejamento, implementação e otimização contínua para atingir seu potencial máximo."
-    },
-    {
-      question: "Atendem minha região?",
-      answer: "Atuamos em todo Brasil, Portugal e EUA. Nossa metodologia funciona independente da localização, com atendimento remoto eficiente e personalizado para cada cliente."
-    }
-  ];
-
+  const faqItems = [{
+    question: "Qual o preço?",
+    answer: "Cada projeto é único e personalizado conforme suas necessidades específicas. O mais caro é perder clientes por falta de estratégia adequada. Entre em contato para uma avaliação personalizada."
+  }, {
+    question: "Quando terei resultado?",
+    answer: "Vai depender do nosso trabalho conjunto. Garantimos método, execução e acompanhamento constante para maximizar os resultados no menor tempo possível, mas com foco em resultados sustentáveis."
+  }, {
+    question: "Qual o prazo mínimo de contrato?",
+    answer: "6 meses é o tempo ideal para consolidar resultados consistentes. Estratégias de marketing eficientes exigem planejamento, implementação e otimização contínua para atingir seu potencial máximo."
+  }, {
+    question: "Atendem minha região?",
+    answer: "Atuamos em todo Brasil, Portugal e EUA. Nossa metodologia funciona independente da localização, com atendimento remoto eficiente e personalizado para cada cliente."
+  }];
   return <div className="min-h-screen bg-dark text-white">
       <Navbar />
       <WhatsAppButton />
@@ -36,11 +28,7 @@ const Index = () => {
       <section className="min-h-screen flex items-center pt-20 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-dark bg-opacity-80"></div>
-          <img 
-            src="/public/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" 
-            alt="Background" 
-            className="w-full h-full object-cover opacity-25"
-          />
+          <img src="/public/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Background" className="w-full h-full object-cover opacity-75" />
         </div>
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="flex flex-col lg:flex-row items-center">
@@ -65,7 +53,7 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-                  <img src="/public/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Especialistas em marketing" className="w-full h-auto" />
+                  
                 </div>
               </div>
             </div>
@@ -464,5 +452,4 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 export default Index;
