@@ -30,7 +30,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-dark bg-opacity-80"></div>
           <img src="/public/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Background" className="w-full h-full opacity-5 object-cover" />
         </div>
-        <div className="container mx-auto px-4 py-20 relative z-10">
+        <div className="container mx-auto py-20 relative z-10 px-[50px]">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 mb-10 lg:mb-0">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
