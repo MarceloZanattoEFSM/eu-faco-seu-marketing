@@ -28,7 +28,7 @@ const Index = () => {
       <section className="min-h-screen flex items-center pt-20 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-dark bg-opacity-80"></div>
-          <img src="/public/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Background" className="w-full h-full opacity-5 object-cover" />
+          <img src="/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png" alt="Background" className="w-full h-full opacity-5 object-cover" />
         </div>
         <div className="container mx-auto py-20 relative z-10 px-[50px]">
           <div className="flex flex-col lg:flex-row items-center">
@@ -74,7 +74,7 @@ const Index = () => {
               <div className="relative max-w-md mx-auto">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-                  <img src="/public/lovable-uploads/40c43d07-6b95-46e3-b7bf-30e8430ccd8b.png" alt="Equipe de especialistas" className="w-full h-auto" />
+                  <img src="/lovable-uploads/40c43d07-6b95-46e3-b7bf-30e8430ccd8b.png" alt="Equipe de especialistas" className="w-full h-auto" />
                 </div>
               </div>
             </div>
@@ -375,7 +375,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
             <div>
               <div className="flex items-center mb-6">
-                <img src="/public/lovable-uploads/ae37cbee-2306-4d0f-881d-12198ce3a9cc.png" alt="Eu Faço Seu Marketing" className="h-10" />
+                <img src="/lovable-uploads/ae37cbee-2306-4d0f-881d-12198ce3a9cc.png" alt="Eu Faço Seu Marketing" className="h-10" />
               </div>
               <p className="text-gray-400 mb-6">
                 Assessoria estratégica em marketing e vendas, transformando negócios através de estratégias personalizadas e resultados mensuráveis.
