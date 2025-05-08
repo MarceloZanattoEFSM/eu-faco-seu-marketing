@@ -42,11 +42,9 @@ const Index = () => {
       <div className="w-full mb-10 lg:mb-0 max-w-4xl">
        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] font-bold leading-snug mb-6">
           <span className="text-white">Seu negócio na direção certa! </span>
-          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-x-2 gap-y-1">
           <span className="text-primary">Estratégia.</span>
           <span className="text-secondary mx-2">Execução.</span>
           <span className="text-white">Resultado.</span>
-          </div>
         </h1>
         <p className="text-xl mb-8 text-gray-300 max-w-xl">
           Somos a assessoria estratégica em marketing e vendas que já ajudou mais de 200 empresas no Brasil e no exterior.
