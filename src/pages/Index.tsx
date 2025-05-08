@@ -28,7 +28,7 @@ const Index = () => {
       <section className="relative z-0 min-h-screen flex items-center pt-20 overflow-hidden">
   {/* Fundo com imagem escura + posicionamento correto */}
   <div className="absolute inset-0 z-0 overflow-hidden">
-    <div className="absolute inset-0 bg-dark bg-opacity-80 z-10"></div>
+    <div className="absolute inset-0 bg-dark bg-opacity-90 z-10"></div>
     <img
       src="/lovable-uploads/5de1c721-df41-4869-9df0-e81198a2fc96.png"
       alt="Background"
